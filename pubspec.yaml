@@ -1,0 +1,59 @@
+name: anki_samurai
+description: "Anki Samurai App"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  easy_localization: ^3.0.3
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+  flutter_localizations:
+    sdk: flutter
+  go_router: ^13.0.0
+  flutter_svg: ^2.0.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  riverpod_generator: ^2.6.5
+  build_runner: ^2.4.15
+  custom_lint: ^0.7.5
+  riverpod_lint: ^2.6.5
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.10
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/lang/
+    - assets/images/
+    - assets/fonts/
+  fonts:
+    - family: Quicksand
+      fonts:
+        - asset: assets/fonts/Quicksand-Regular.ttf
+        - asset: assets/fonts/Quicksand-Bold.ttf
+          weight: 700
+
+flutter_icons:
+  image_path: "assets/images/logo.png"
+  android: true
+  ios: true
+
+flutter_native_splash:
+  color: "#CBE9F4"
+  image: assets/images/splash_logo.png
+  branding: assets/images/title_logo.png
+  android: true
+  ios: true
+  android_12:
+    color: "#CBE9F4"
+    image: assets/images/splash_logo.png
+    branding: assets/images/title_logo.png
